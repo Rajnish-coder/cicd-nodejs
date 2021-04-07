@@ -8,7 +8,7 @@ const mongoose = require("mongoose");
 
 
 
-mongoose.connect('mongodb://mongo:27017/blogDB', {
+mongoose.connect('mongodb://host.docker.internal:27017/blogDB', {
 
   useUnifiedTopology: true,
 
