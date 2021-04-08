@@ -5,10 +5,10 @@ let should = chai.should();
 
 chai.use(chaiHttp);
 
-describe('/ home route', () => {
-  it('it should open the homepage', (done) => {
+describe('/ compose route', () => {
+  it('it should check the compose page', (done) => {
     chai.request(server)
-        .get('/')
+        .get('/compose')
         .end((err, res) => {
               res.should.have.status(200);
           done();
