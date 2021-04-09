@@ -1,7 +1,7 @@
 version: '3'
 services:
   web:
-    image: "docker-node"
+    image: "rajnishcoder/nodejs"
     build: .
     command: "node app.js"
     ports:
